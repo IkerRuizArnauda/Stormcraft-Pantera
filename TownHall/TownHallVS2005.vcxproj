@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug-TBC|Win32">
+      <Configuration>Debug-TBC</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-TBC|Win32">
+      <Configuration>Release-TBC</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>TownHall</ProjectName>
+    <ProjectGuid>{038F16E7-7AF2-4D3E-BA3D-FA22191B222F}</ProjectGuid>
+    <RootNamespace>TownHall</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-TBC|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-TBC|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-TBC|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-TBC|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-TBC|Win32'">
+    <OutDir>Debug-TBC\</OutDir>
+    <IntDir>Debug-TBC\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-TBC|Win32'">
+    <OutDir>Release-TBC\</OutDir>
+    <IntDir>Release-TBC\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USE_32BIT_TIME_T;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;libeay32.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../Bin/Debug/$(ProjectName).exe</OutputFile>
+      <IgnoreSpecificDefaultLibraries>MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>../Bin/Debug/$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USE_32BIT_TIME_T;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;ws2_32.lib;libeay32.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../Bin/$(ProjectName).exe</OutputFile>
+      <IgnoreSpecificDefaultLibraries>LIBC;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences />
+      <EnableCOMDATFolding />
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-TBC|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USE_32BIT_TIME_T;COMPILER_TBC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;libeay32.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../Bin/Debug/$(ProjectName)-TBC.exe</OutputFile>
+      <IgnoreSpecificDefaultLibraries>MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>../Bin/Debug/$(ProjectName)-TBC.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-TBC|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USE_32BIT_TIME_T;COMPILER_TBC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;ws2_32.lib;libeay32.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../Bin/$(ProjectName)-TBC.exe</OutputFile>
+      <IgnoreSpecificDefaultLibraries>LIBC;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences />
+      <EnableCOMDATFolding />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Account.h" />
+    <ClInclude Include="antidebuggers.h" />
+    <ClInclude Include="AuctionHouse.h" />
+    <ClInclude Include="AuraHandler.h" />
+    <ClInclude Include="ChatManager.h" />
+    <ClInclude Include="Client.h" />
+    <ClInclude Include="Compress.h" />
+    <ClInclude Include="ConsoleDlg.h" />
+    <ClInclude Include="ConsoleInterface.h" />
+    <ClInclude Include="Corpse.h" />
+    <ClInclude Include="Creature.h" />
+    <ClInclude Include="CreatureTemplate.h" />
+    <ClInclude Include="DataBuffer.h" />
+    <ClInclude Include="DataManager.h" />
+    <ClInclude Include="DBCHandler.h" />
+    <ClInclude Include="dbc_structs.h" />
+    <ClInclude Include="Debug.h" />
+    <ClInclude Include="Defines.h" />
+    <ClInclude Include="DefStorage.h" />
+    <ClInclude Include="DynamicObject.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="EventManager.h" />
+    <ClInclude Include="FlyPath.h" />
+    <ClInclude Include="GameMechanics.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameObjectTemplate.h" />
+    <ClInclude Include="Globals.h" />
+    <ClInclude Include="Graveyards.h" />
+    <ClInclude Include="Guild.h" />
+    <ClInclude Include="Index.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="ItemTemplate.h" />
+    <ClInclude Include="LootTable.h" />
+    <ClInclude Include="Mail.h" />
+    <ClInclude Include="MFCThreading.h" />
+    <ClInclude Include="MsgHandlers.h" />
+    <ClInclude Include="NPCText.h" />
+    <ClInclude Include="OpCodes.h" />
+    <ClInclude Include="Packet.h" />
+    <ClInclude Include="Packets.h" />
+    <ClInclude Include="Party.h" />
+    <ClInclude Include="PathGroup.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PPoint.h" />
+    <ClInclude Include="Quest.h" />
+    <ClInclude Include="QuestFunctions.h" />
+    <ClInclude Include="Queue.h" />
+    <ClInclude Include="RealmServer.h" />
+    <ClInclude Include="RegionManager.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RollBtn.h" />
+    <ClInclude Include="SellTemplate.h" />
+    <ClInclude Include="SendMail.h" />
+    <ClInclude Include="SendPDlg.h" />
+    <ClInclude Include="Settings.h" />
+    <ClInclude Include="SpawnPoint.h" />
+    <ClInclude Include="Spell.h" />
+    <ClInclude Include="SpellHandler.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Storage.h" />
+    <ClInclude Include="Structs.h" />
+    <ClInclude Include="SystemTray.h" />
+    <ClInclude Include="TCPSocket.h" />
+    <ClInclude Include="Threading.h" />
+    <ClInclude Include="TownHall.h" />
+    <ClInclude Include="TownHallDlg.h" />
+    <ClInclude Include="TrainerTemplate.h" />
+    <ClInclude Include="TransparentStatic.h" />
+    <ClInclude Include="UDPSocket.h" />
+    <ClInclude Include="UnixThreading.h" />
+    <ClInclude Include="UpdateBlock.h" />
+    <ClInclude Include="UpdateFields.h" />
+    <ClInclude Include="UpdateObject.h" />
+    <ClInclude Include="WinThreading.h" />
+    <ClInclude Include="WoWObject.h" />
+    <ClInclude Include="Zone.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Btn\Console.bmp" />
+    <Image Include="Btn\Console_f1.bmp" />
+    <Image Include="Btn\Console_f2.bmp" />
+    <Image Include="Btn\Console_f3.bmp" />
+    <Image Include="Btn\Exit.bmp" />
+    <Image Include="Btn\Exit_f1.bmp" />
+    <Image Include="Btn\Exit_f2.bmp" />
+    <Image Include="Btn\Exit_f3.bmp" />
+    <Image Include="Btn\Minimize.bmp" />
+    <Image Include="Btn\Minimize_f1.bmp" />
+    <Image Include="Btn\Minimize_f2.bmp" />
+    <Image Include="Btn\Minimize_f3.bmp" />
+    <Image Include="Btn\Reload.bmp" />
+    <Image Include="Btn\Reload_f1.bmp" />
+    <Image Include="Btn\Reload_f2.bmp" />
+    <Image Include="Btn\Reload_f3.bmp" />
+    <Image Include="Btn\Save.bmp" />
+    <Image Include="Btn\Save_f1.bmp" />
+    <Image Include="Btn\Save_f2.bmp" />
+    <Image Include="Btn\Save_f3.bmp" />
+    <Image Include="Btn\SendMail.bmp" />
+    <Image Include="Btn\SendMail_f1.bmp" />
+    <Image Include="Btn\SendMail_f2.bmp" />
+    <Image Include="Btn\SendMail_f3.bmp" />
+    <Image Include="Btn\SendPkt.bmp" />
+    <Image Include="Btn\SendPkt_f1.bmp" />
+    <Image Include="Btn\SendPkt_f2.bmp" />
+    <Image Include="Btn\SendPkt_f3.bmp" />
+    <Image Include="Btn\Start.bmp" />
+    <Image Include="Btn\Start_f1.bmp" />
+    <Image Include="Btn\Start_f2.bmp" />
+    <Image Include="Btn\Start_f3.bmp" />
+    <Image Include="Btn\Stop.bmp" />
+    <Image Include="Btn\Stop_f1.bmp" />
+    <Image Include="Btn\Stop_f2.bmp" />
+    <Image Include="Btn\Stop_f3.bmp" />
+    <Image Include="res\TownHall.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\TownHall.manifest">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TownHall.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\TownHall.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Account.cpp" />
+    <ClCompile Include="antidebuggers.cpp" />
+    <ClCompile Include="AuctionHouse.cpp" />
+    <ClCompile Include="AuraHandler.cpp" />
+    <ClCompile Include="BigNumber.cpp" />
+    <ClCompile Include="ChatManager.cpp" />
+    <ClCompile Include="Client.cpp" />
+    <ClCompile Include="Compress.cpp" />
+    <ClCompile Include="ConsoleDlg.cpp" />
+    <ClCompile Include="ConsoleInterface.cpp" />
+    <ClCompile Include="Corpse.cpp" />
+    <ClCompile Include="Creature.cpp" />
+    <ClCompile Include="CreatureTemplate.cpp" />
+    <ClCompile Include="DataManager.cpp" />
+    <ClCompile Include="DBCHandler.cpp" />
+    <ClCompile Include="Debug.cpp" />
+    <ClCompile Include="DynamicObject.cpp" />
+    <ClCompile Include="Event.cpp" />
+    <ClCompile Include="EventManager.cpp" />
+    <ClCompile Include="GameMechanics.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameObjectTemplate.cpp" />
+    <ClCompile Include="Guild.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="ItemTemplate.cpp" />
+    <ClCompile Include="LootTable.cpp" />
+    <ClCompile Include="Mail.cpp" />
+    <ClCompile Include="MsgHandlers.cpp" />
+    <ClCompile Include="NPCText.cpp" />
+    <ClCompile Include="Packets.cpp" />
+    <ClCompile Include="Party.cpp" />
+    <ClCompile Include="PathGroup.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PPoint.cpp" />
+    <ClCompile Include="Quest.cpp" />
+    <ClCompile Include="QuestFunctions.cpp" />
+    <ClCompile Include="RealmServer.cpp" />
+    <ClCompile Include="RegionManager.cpp" />
+    <ClCompile Include="RollBtn.cpp" />
+    <ClCompile Include="SendMail.cpp" />
+    <ClCompile Include="SendPDlg.cpp" />
+    <ClCompile Include="Settings.cpp" />
+    <ClCompile Include="Sha1.cpp" />
+    <ClCompile Include="SpawnPoint.cpp" />
+    <ClCompile Include="Spell.cpp" />
+    <ClCompile Include="SpellHandler.cpp" />
+    <ClCompile Include="SystemTray.cpp" />
+    <ClCompile Include="TCPSocket.cpp" />
+    <ClCompile Include="TownHall.cpp" />
+    <ClCompile Include="TownHallDlg.cpp" />
+    <ClCompile Include="TrainerTemplate.cpp" />
+    <ClCompile Include="TransparentStatic.cpp" />
+    <ClCompile Include="UDPSocket.cpp" />
+    <ClCompile Include="UpdateObject.cpp" />
+    <ClCompile Include="WowCrypt.cpp" />
+    <ClCompile Include="WoWObject.cpp" />
+    <ClCompile Include="Zone.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="TownHall.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
